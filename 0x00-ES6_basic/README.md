@@ -53,8 +53,8 @@ in your project directory, install Jest, Babel and ESList by using the supplied 
 
 ## Configuration files
 Add the files below to your project directory
-* [package.json]()
-* [babel.config.js]()
-* [.eslintrc.js]()
+* [package.json](https://github.com/gichobih/alx-backend-javascript/blob/main/0x00-ES6_basic/package.json)
+* [babel.config.js](https://github.com/gichobih/alx-backend-javascript/blob/main/0x00-ES6_basic/babel.config.js)
+* [.eslintrc.js](https://github.com/gichobih/alx-backend-javascript/blob/main/0x00-ES6_basic/.eslintrc.js)
 ### Finally…
 Don’t forget to run `npm install` from the terminal of your project folder to install all necessary project dependencies.
