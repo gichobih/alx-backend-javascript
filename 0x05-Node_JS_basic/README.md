@@ -56,9 +56,9 @@ Tommy,Schoul,32,SWE
 Katie,Shirou,21,CS
 ```
 
-[package.json]()
-[babel.config.js]()
-[.eslintrc.js]()
+* [package.json](https://github.com/gichobih/alx-backend-javascript/blob/main/0x05-Node_JS_basic/package.json)
+* [babel.config.js](https://github.com/gichobih/alx-backend-javascript/blob/main/0x05-Node_JS_basic/babel.config.js)
+* [.eslintrc.js](https://github.com/gichobih/alx-backend-javascript/blob/main/0x05-Node_JS_basic/.eslintrc.js)
 
 #### and…
 Don’t forget to run `$ npm install` when you have the `package.json`
