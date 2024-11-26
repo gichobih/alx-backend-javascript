@@ -21,7 +21,7 @@ const countStudents = (dataPath) => {
 
         for (const line of fileLines.slice(1)) {
           const studentRecord = line.split(',');
-          if (studentRecord.length !== dbFieldNames.length) continue; // Skip invalid lines
+          if (studentRecord.length !== dbFieldNames.length) continue;
 
           const studentPropValues = studentRecord.slice(0, studentRecord.length - 1);
           const field = studentRecord[studentRecord.length - 1];
