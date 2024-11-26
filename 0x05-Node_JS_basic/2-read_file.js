@@ -7,14 +7,14 @@ const countStudents = (dataPath) => {
     if (!fileData) throw new Error('Cannot load the database');
     const fileLines = fileData.split('\n');
 
-    const headers = fileLines[0].split(','); // Extract column headers
-    const studentProperties = headers.slice(0, headers.length - 1); // All except the last column
+    const headers = fileLines[0].split(',');
+    const studentProperties = headers.slice(0, headers.length - 1);
     const studentGroups = {};
 
     // Process each line except the header
     for (const line of fileLines.slice(1)) {
       const studentRecord = line.split(',');
-      if (studentRecord.length !== headers.length) continue; // Skip invalid records
+      if (studentRecord.length !== headers.length) continue;
 
       const studentData = Object.fromEntries(
         studentProperties.map((prop, idx) => [prop, studentRecord[idx]])
