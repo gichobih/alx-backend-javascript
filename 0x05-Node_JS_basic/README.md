@@ -355,7 +355,7 @@ bob@dylan:~$
 * Directory: `0x05-Node_JS_basic`
 * File: `7-http_express.js`
 
-## 7. Create a more complex HTTP server using Express
+## 8. Organize a complex HTTP server using Express
 
 Obviously writing every part of a server within a single file is not sustainable. Let’s create a full server in a directory named `full_server`.
 
