@@ -231,6 +231,7 @@ You don’t necessarily want to do that on every test run
 
 ### Repo:
 
+
 * GitHub repository: `alx-backend-javascript`
 * Directory: `0x06-unittests_in_js`
 * File: `4-payment.js, 4-payment.test.js`
@@ -240,9 +241,9 @@ You don’t necessarily want to do that on every test run
 
 Hooks are useful functions that can be called before execute one or all tests in a suite
 
-## Copy the code from `4-payment.js` into a new file `5-payment.js: `(same content/same behavior)
+#### Copy the code from `4-payment.js` into a new file `5-payment.js: `(same content/same behavior)
 
-## Create a new file `5-payment.test.js:`
+#### Create a new file `5-payment.test.js:`
 
 * Inside the same `describe`, create 2 tests:
   * The first test will call `sendPaymentRequestToAPI` with 100, and 20:
@@ -251,14 +252,43 @@ Hooks are useful functions that can be called before execute one or all tests in
 * The second test will call `sendPaymentRequestToAPI` with 10, and 10:
      * Verify that the console is logging the string `The total is: 20`
      * Verify that the console is only called once
-## Requirements:
+### Requirements:
 
 * You should be able to run the test suite using npm test `5-payment.test.js`
 * Every test should pass without any warning
 * You should use only one `spy` to complete this exercise
 * You should use a `beforeEach` and a `afterEach` hooks to complete this exercise
-## Repo:
+### Repo:
 
 * GitHub repository: `alx-backend-javascript`
 * Directory: `0x06-unittests_in_js`
 * File: `5-payment.js, 5-payment.test.js`
+
+## 6. Async tests with done
+
+Look into how to support async testing, for example when waiting for the answer of an API or from a Promise
+
+#### Create a new file `6-payment_token.js:`
+ * Create a new function named `getPaymentTokenFromAPI`
+ * The function will take an argument called `success` (boolean)
+ * When success is true, it should return a resolved promise with the object `{data: 'Successful response from the API' }`
+ * Otherwise, the function is doing nothing.
+#### Create a new file `6-payment_token.test.js` and write a test suite named `getPaymentTokenFromAPI`
+
+* How to test the result of `getPaymentTokenFromAPI(true)?`
+#### Tips:
+
+* You should be extremely careful when working with async testing. 
+Without calling `done` properly, your test could be always passing even if what you are actually testing is never executed
+### Requirements:
+
+* You should be able to run the test suite using npm test `6-payment_token.test.js`
+* Every test should pass without any warning
+* You should use the `done` callback to execute this test
+
+
+### Repo:
+
+* GitHub repository: `alx-backend-javascript`
+* Directory: `0x06-unittests_in_js`
+* File: `6-payment_token.js, 6-payment_token.test.js`
